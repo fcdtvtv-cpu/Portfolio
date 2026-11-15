@@ -1,7 +1,10 @@
-// Пока минимальный файл.
-// Сюда позже добавим:
-// - появление элементов при скролле
-// - праздничные эффекты
-// - переключение тем
+document.addEventListener('DOMContentLoaded', () => {
+  const intro = document.getElementById('intro');
+  const site = document.getElementById('site');
 
-console.log('Portfolio loaded');
+  // Через 2.2 секунды убираем интро
+  setTimeout(() => {
+    intro.classList.add('hide');
+    site.classList.add('visible');
+  }, 2200);
+});
